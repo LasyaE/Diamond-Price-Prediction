@@ -2,8 +2,12 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# Load the saved pipeline
-pipeline = joblib.load("diamond_pipeline.pkl")
+# Load the saved pipeline only once
+@st.cache_resource
+def load_pipeline():
+    return joblib.load("diamond_pipeline.pkl")
+
+pipeline = load_pipeline()
 
 # Extract model, encoder and columns
 model = pipeline["model"]
