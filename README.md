@@ -208,6 +208,9 @@ The application preprocesses the inputs using the saved encoder and predicts the
 
 ---
 
+#Live Demo:
+ https://diamond-price-prediction-rplveaqu2q3azbdmzqwwvq.streamlit.app/
+
 ## 👩‍💻 Author
 
 **Lasya Reddy**
